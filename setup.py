@@ -19,7 +19,7 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     include_package_data=True,
-    entry_points={"console_scripts": ["supp = cli.program:main"]},
+    entry_points={"console_scripts": ["supp = cli.__main__:main"]},
     python_requires=">=3.6",
     description="",
     long_description=long_description,

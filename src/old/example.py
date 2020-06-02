@@ -53,28 +53,28 @@ done.
 
 
 use_cases = [
-	# simple
-	'supp source', #0 source command
-	'supp source ./', #1 source command
-	'supp source file.py', #2 source command
-	'supp source file.py -f sds', #3 source command with error
-	# 
-	'supp drop', #4 drop command
-	'supp drop blah.py -a fds', #5 drop command with error
-	'supp drop hi.py', #6 drop command with error if hi.py is not sourced
-	# 
-	'supp', #7 help command
-	'supp help', #8 help command
-	'supp help -a bar.py', #9 help command with error
-	'supp version', #10 version command
-	'supp version test', #11 version command with error
-	# 
-	'supp ./ ./file.py ./test.py hello_world bye', #12 execute command [$3 file_paths] [$2 funcs]
-	'supp blah blah', #13 execute command [$2 funcs]
-	'supp blah -a bye', #14 execute command [$1 func](bye)
-	'supp blah -hi bye', #15 execute command [$1 func](hi=bye)
-	'supp blah -hi bye come', #16 execute command [$1 func](hi=bye) with error
-	'supp blah -a bye -d lets', #17 execute command [$1 func](a=bye, d=lets)
-	'supp blah --args bye', #18 execute command [$1 func](bye)
-	'supp blah --a bye hi now', #19 execute command [$1 func](bye, hi, now)
+    # simple
+    "supp source",  # 0 source command
+    "supp source ./",  # 1 source command
+    "supp source file.py",  # 2 source command
+    "supp source file.py -f sds",  # 3 source command with error
+    #
+    "supp drop",  # 4 drop command
+    "supp drop blah.py -a fds",  # 5 drop command with error
+    "supp drop hi.py",  # 6 drop command with error if hi.py is not sourced
+    #
+    "supp",  # 7 help command
+    "supp help",  # 8 help command
+    "supp help -a bar.py",  # 9 help command with error
+    "supp version",  # 10 version command
+    "supp version test",  # 11 version command with error
+    #
+    "supp ./ ./file.py ./test.py hello_world bye",  # 12 execute command [$3 file_paths] [$2 funcs]
+    "supp blah blah",  # 13 execute command [$2 funcs]
+    "supp blah -a bye",  # 14 execute command [$1 func](bye)
+    "supp blah -hi bye",  # 15 execute command [$1 func](hi=bye)
+    "supp blah -hi bye come",  # 16 execute command [$1 func](hi=bye) with error
+    "supp blah -a bye -d lets",  # 17 execute command [$1 func](a=bye, d=lets)
+    "supp blah --args bye",  # 18 execute command [$1 func](bye)
+    "supp blah --a bye hi now",  # 19 execute command [$1 func](bye, hi, now)
 ]
